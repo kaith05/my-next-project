@@ -1,8 +1,10 @@
 :root {
-  --font-mono: ui-monospace,Menlo,Monaco,"clascadia Mono","segon UI mono","Roboto Mono","Robot Mono","Oxygen Mono","Ubuntu Monospase","source Code Pro","Fire Mono","Droid Sans Mono","Courier New",monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --color-text-main: #333;
   --color-text-sub: #999;
-  --color-text-uppercase: #fff;
+  --color-text-unpainted: #fff;
   --color-text-error: #f33;
   --color-bg-main: #fff;
   --color-bg-sub: #f3f3f3;
@@ -13,7 +15,7 @@
   --color-border-light: #f3f3f3;
   --color-current: #eee;
   --color-button-primary: #333;
-  --color-radius: 4px;
+  --border-radius: 4px;
 }
 
 * {
@@ -29,24 +31,15 @@ body {
 }
 
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    YuGothic,
-    "ヒノラギノ角ゴ ProN W3",
-    Hinoragino Kaku Gothic ProN,
-    Arial,
-    "メイリオ",
-    Meiryo,
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', YuGothic,
+    'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo,
     sans-serif;
-
   color: var(--color-text-main);
-  line-height: 1.8; 
+  line-height: 1.8;
 }
 
-code{
-  font-family: menlo,inconsolate,monospace;
+code {
+  font-family: menlo, inconsolata, monospace;
 }
 
 a {
@@ -54,6 +47,7 @@ a {
   text-decoration: none;
 }
 
-ol {
+ol,
+ul {
   list-style: none;
 }
