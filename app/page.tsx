@@ -40,7 +40,6 @@ import { News } from "@/app/_libs/microcms";
 
 export default function Home() {
   const sliceData = data.contents.slice(0, 2);
-  //const sliceData: News = [];
 
   return (
     <>
@@ -63,7 +62,9 @@ export default function Home() {
         <h2 className={styles.newsTitle}>News</h2>
         <NewsList news={sliceData} />
         <div className={styles.newsLink}>
-          <ButtonLink href="/news">もっとみる</ButtonLink>
+          <ButtonLink href="/news">
+            もっとみる
+          </ButtonLink>
         </div>
       </section>
     </>

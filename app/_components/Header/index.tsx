@@ -3,9 +3,10 @@ import styles from "./index.module.css";
 
 export default function Header() {
     return (
-        <header className={styles.Header}>
+        <header className={styles.header}>
             <a href="/" className={styles.logolink}>
                 <Image
+                    className={styles.logo}
                     src="/logo.svg"
                     alt="SIMPLE"
                     width={348}
