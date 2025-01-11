@@ -2,7 +2,7 @@ import Hero from '@/app/_components/Hero';
 import Sheet from '@/app/_components/Sheet';
 
 export const metadata = {
-  title: 'ニュース',
+  title: '制作物',
 };
 
 type Props = {
@@ -14,7 +14,7 @@ export const revalidate = 60;
 export default function NewsLayout({ children }: Props) {
   return (
     <>
-      <Hero title="News" sub="ニュース" />
+      <Hero title="制作物" sub="過去作品" />
       <Sheet>{children}</Sheet>
     </>
   );

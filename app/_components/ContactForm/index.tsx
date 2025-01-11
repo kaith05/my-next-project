@@ -2,19 +2,18 @@
 
 import { createContactData } from '@/app/_actions/contact';
 import { useFormState } from 'react-dom';
-import { sendGAEvent } from '@next/third-parties/google';
 import styles from './index.module.css';
 
 const initialState = {
-  status: '',
-  message: '',
+  status: "",
+  message: "",
 };
 
 export default function ContactForm() {
   const [state, formAction] = useFormState(createContactData, initialState);
   console.log(state);
   const handleSubmit = () => {
-    sendGAEvent({ event: 'contact', value: 'submit' });
+    console.log(111);
   };
   if (state.status === 'success') {
     return (

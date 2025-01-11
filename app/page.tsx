@@ -14,21 +14,21 @@ export default async function Home() {
     <>
       <section className={styles.top}>
         <div>
-          <h1 className={styles.title}>テクノロジーの力で世界を変える</h1>
+          {/* <h1 className={styles.title}>テクノロジーの力で世界を変える</h1> */}
           <p className={styles.description}>
-            私たちは市場をリードしているグローバルテックカンパニーです。
+            {/* 私たちは市場をリードしているグローバルテックカンパニーです。 */}
           </p>
         </div>
         <Image
           className={styles.bgimg}
-          src="/img-mv.jpg"
+          src="/HP画像.png"
           alt=""
           width={4000}
           height={1200}
         />
       </section>
       <section className={styles.news}>
-        <h2 className={styles.newsTitle}>News</h2>
+        <h2 className={styles.newsTitle}>制作物</h2>
         <NewsList news={data.contents} />
         <div className={styles.newsLink}>
           <ButtonLink href="/news">
