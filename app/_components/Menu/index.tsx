@@ -16,13 +16,13 @@ export default function Menu() {
         <nav className={cx(styles.nav, isOpen && styles.open)}>
           <ul className={styles.items}>
             <li>
-              <Link href="/news" onClick={close}>
-                ニュース
+              <Link href="/production" onClick={close}>
+                制作物
               </Link>
             </li>
             <li>
-              <Link href="/members" onClick={close}>
-                メンバー
+              <Link href="/introduction" onClick={close}>
+                自己紹介
               </Link>
             </li>
             <li>
@@ -42,7 +42,7 @@ export default function Menu() {
           </button>
         </nav>
         <button className={styles.button} onClick={open}>
-          <Image src="/menu.svg" alt="メニュー" width={24} height={24} />
+          <Image src="/menu.svg" alt="制作物" width={24} height={24} />
         </button>
       </div>
     );
