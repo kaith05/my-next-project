@@ -11,14 +11,14 @@ export default function Footer() {
               <Link href="/production">制作物一覧</Link>
             </li>
             <li className={styles.item}>
-              <Link href="/menbers">????</Link>
+              <Link href="/introduction">自己紹介</Link>
             </li>
             <li className={styles.item}>
-              <Link href="/contact">????</Link>
+              <Link href="/contact">お問い合わせ</Link>
             </li>
           </ul>
         </nav>
-        <p className={styles.cr}>© SIMPLE.ALL Rights Reserves 2024</p>
+        <p className={styles.cr}>© NO THRILLING NO LIFE </p>
       </footer>
     );
 }

@@ -2,23 +2,38 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { getNewsList } from "./_libs/microcms";
 import { TOP_NEWS_LIMIT } from "./_components";
-import NewsList from "@/app/_components/NewsList";
+import NewsList from "@/app/_components/ProductionList";
 import ButtonLink from "@/app/_components/ButtonLink";
 
+import React from "react";
+import Head from "next/head";
+
+// Appコンポーネントのエクスポートを通常のエクスポートに変更
+export const App: React.FC = () => {
+  return (
+    <div>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/js/particles.js"></script>
+      </Head>
+
+      {/* 煙のエフェクトのみ */}
+      <div id="particles-js"></div>
+    </div>
+  );
+};
+
+// Home関数は`default`エクスポートを使い続ける
 export default async function Home() {
   const data = await getNewsList({
-    limit: TOP_NEWS_LIMIT, 
+    limit: TOP_NEWS_LIMIT,
   });
 
-    return (
+  return (
     <>
       <section className={styles.top}>
-        <div>
-          {/* <h1 className={styles.title}>テクノロジーの力で世界を変える</h1> */}
-          <p className={styles.description}>
-            {/* 私たちは市場をリードしているグローバルテックカンパニーです。 */}
-          </p>
-        </div>
+        <div></div>
         <Image
           className={styles.bgimg}
           src="/HP画像.png"
@@ -31,9 +46,7 @@ export default async function Home() {
         <h2 className={styles.newsTitle}>制作物</h2>
         <NewsList news={data.contents} />
         <div className={styles.newsLink}>
-          <ButtonLink href="/news">
-            もっとみる
-          </ButtonLink>
+          <ButtonLink href="/news">もっとみる</ButtonLink>
         </div>
       </section>
     </>
