@@ -27,7 +27,7 @@ export default async function Page({ params }: Props) {
       <NewsList news={news} />
       <Pagination
         totalCount={totalCount}
-        basePath={`/news/category/${category.id}`}
+        basePath={`/production/category/${category.id}`}
       />
     </>
   );

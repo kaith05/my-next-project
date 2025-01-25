@@ -30,7 +30,7 @@
     display: block;
     height: 1px;
     width: 20px;
-    background-color: var(--color-text-unpainted);
+    background-color: var(--color-text-sub);
 }
 
 .bgimg {
