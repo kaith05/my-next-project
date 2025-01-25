@@ -6,3 +6,15 @@
     padding: 80px;
     border-radius: 8px;
 }
+
+@media (max-width: 1000px) {
+    .container {
+        width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 5px;
+    }
+}

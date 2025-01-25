@@ -50,3 +50,21 @@
 .empty {
     margin-bottom: 40px;
 }
+
+@media (max-width: 1000px) {
+    .list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .list:nth-child(even) {
+        flex-direction: column;
+    }
+
+
+    .image {
+        width: 240px;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
+}

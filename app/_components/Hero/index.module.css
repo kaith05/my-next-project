@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 255, 0.5);   
+    background-color: #233;   
     color: #333;
     overflow: hidden;
     padding: 100px 0;
@@ -45,4 +45,31 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .news {
+        width: calc(100% - 160px);
+    }
+}
+
+@media (max-width: 640px) {
+    .top {
+        padding: 120px 16px;
+    }
+    .bgimg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1; 
+    }
+
+    
 }
