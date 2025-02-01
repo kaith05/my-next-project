@@ -9,7 +9,7 @@
 
 @media (max-width: 1000px) {
     .container {
-        width: calc(100% - 120px);
+        width: calc(100% - 75px);
     }
 }
 
