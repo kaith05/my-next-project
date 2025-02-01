@@ -17,14 +17,6 @@
     margin-bottom: 1rem;
 }
 
-.sub {
-    display: none;
-}
-
-.sub::before {
-    display: none;
-}
-
 .bgimg {
     position: absolute;
     top: 0;
