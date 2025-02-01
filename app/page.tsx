@@ -7,7 +7,6 @@ import ButtonLink from "@/app/_components/ButtonLink";
 
 import React from "react";
 
-// Home関数は`default`エクスポートを使い続ける
 export default async function Home() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIMIT,
